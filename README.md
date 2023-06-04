@@ -13,7 +13,7 @@ Añadimos todos los archivos para el commit
 ```ssh
 	git add .
 ```
-Hacemos el primer commit
+Hacemos el primer commit (o cualquier cambio posterior)
 ```ssh
 	git commit -m "Texto que identifique la función del commit"
 ```
