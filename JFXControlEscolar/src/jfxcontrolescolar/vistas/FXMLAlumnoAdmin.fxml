@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="638.0" prefWidth="957.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jfxcontrolescolar.controladores.FXMLAlumnoAdminController">
+   <children>
+      <Pane prefHeight="66.0" prefWidth="957.0" style="-fx-background-color: #045bab;">
+         <children>
+            <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="14.0" layoutY="11.0" onMouseClicked="#clicCerrarVentana" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/arrow.png" />
+               </image></ImageView>
+            <Label layoutX="89.0" layoutY="17.0" text="Administración de Alumnos" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Regular" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="tvAlumnos" layoutX="28.0" layoutY="160.0" prefHeight="456.0" prefWidth="901.0">
+        <columns>
+          <TableColumn fx:id="colMatricula" prefWidth="135.0" text="Matrícula" />
+          <TableColumn fx:id="colNombre" prefWidth="131.0" text="Nombre" />
+            <TableColumn fx:id="colApPaterno" prefWidth="129.0" text="Apellido Paterno" />
+            <TableColumn fx:id="colApMaterno" prefWidth="122.0" text="Apellido Materno" />
+            <TableColumn fx:id="colCorreo" prefWidth="129.0" text="Correo" />
+            <TableColumn fx:id="colFacultad" prefWidth="124.0" text="Facultad" />
+            <TableColumn fx:id="colCarrera" prefWidth="130.0" text="Carrera" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfBusqueda" layoutX="28.0" layoutY="97.0" prefHeight="27.0" prefWidth="324.0" promptText="Buscar alumno" />
+      <Button layoutX="394.0" layoutY="97.0" mnemonicParsing="false" onAction="#clicBtnRegistrar" prefHeight="27.0" prefWidth="135.0" text="Registrar " />
+      <Button layoutX="566.0" layoutY="97.0" mnemonicParsing="false" onAction="#clicBtnEditar" prefHeight="27.0" prefWidth="135.0" text="Editar" />
+      <Button layoutX="732.0" layoutY="97.0" mnemonicParsing="false" onAction="#clicBtnEliminar" prefHeight="27.0" prefWidth="135.0" text="Eliminar" />
+      <ImageView fitHeight="34.0" fitWidth="39.0" layoutX="899.0" layoutY="93.0" onMouseClicked="#clicExportarInformacion" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/ic_csv.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

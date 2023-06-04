@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jfxcontrolescolar.controladores.FXMLInicioSesionController">
+   <children>
+      <Pane prefHeight="602.0" prefWidth="440.0">
+         <children>
+            <ImageView fitHeight="297.0" fitWidth="293.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/lineas_uv.png" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <ImageView fx:id="ivLogo" fitHeight="265.0" fitWidth="213.0" layoutX="-218.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/uv_fondo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="450.0" layoutY="1.0" prefHeight="602.0" prefWidth="450.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="153.0" layoutY="57.0" text="Iniciar Sesión" textFill="#045bab">
+               <font>
+                  <Font name="Roboto Medium" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="140.0" text="Ingresa tu usuario y contraseña para iniciar sesión">
+               <font>
+                  <Font name="Roboto Regular" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfUsuario" layoutX="112.0" layoutY="222.0" prefHeight="27.0" prefWidth="227.0" promptText="Ej. jsanchez" />
+            <Label layoutX="112.0" layoutY="200.0" text="Usuario" textFill="#5b5a5a" />
+            <Label fx:id="lbErrorUsuario" layoutX="113.0" layoutY="250.0" textFill="#f50000">
+               <font>
+                  <Font name="System Italic" size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbErrorPassword" layoutX="113.0" layoutY="327.0" textFill="#f50000">
+               <font>
+                  <Font name="System Italic" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="112.0" layoutY="277.0" text="Contraseña" textFill="#5b5a5a" />
+            <PasswordField fx:id="tfPassword" layoutX="113.0" layoutY="297.0" prefHeight="27.0" prefWidth="227.0" promptText="Ej. 12345" />
+            <Button layoutX="160.0" layoutY="415.0" mnemonicParsing="false" onAction="#clicIniciarSesion" prefHeight="27.0" prefWidth="133.0" style="-fx-background-color: #03AB4F;" text="Iniciar sesión" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="619.0" prefWidth="913.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jfxcontrolescolar.controladores.FXMLPrincipalController">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="77.0" prefWidth="913.0" style="-fx-background-color: #045bab;">
+         <children>
+            <Label layoutX="97.0" layoutY="23.0" text="Sistema de Control Escolar" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Regular" size="23.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgMenu" fitHeight="40.0" fitWidth="40.0" layoutX="28.0" layoutY="19.0" onMouseClicked="#clicOpenMenu" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/menu.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="747.0" layoutY="24.0" text="Bienvenido(a)" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Regular" size="23.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <ImageView fitHeight="286.0" fitWidth="207.0" layoutX="353.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/uv_fondo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="272.0" layoutX="634.0" layoutY="581.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/pleca.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="menu" layoutX="-256.0" layoutY="76.0" prefHeight="544.0" prefWidth="255.0" style="-fx-background-color: #045bab;">
+         <children>
+            <Pane layoutX="7.0" layoutY="30.0" prefHeight="50.0" prefWidth="237.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/student.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="48.0" layoutY="16.0" onMouseClicked="#clicIrAdminAlumnos" text="Administración de alumnos" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Regular" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="8.0" layoutY="473.0" onMouseClicked="#clicCerrarSesion" prefHeight="50.0" prefWidth="229.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/logout.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="48.0" layoutY="16.0" text="Cerrar sesión" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Regular" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="7.0" layoutY="86.0" prefHeight="50.0" prefWidth="237.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="48.0" layoutY="16.0" text="Administración de usuarios" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Regular" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

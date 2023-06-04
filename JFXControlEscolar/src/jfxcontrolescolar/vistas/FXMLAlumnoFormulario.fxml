@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="588.0" prefWidth="820.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jfxcontrolescolar.controladores.FXMLAlumnoFormularioController">
+   <children>
+      <Label fx:id="lbTitulo" layoutX="42.0" layoutY="29.0" text="Alumno">
+         <font>
+            <Font name="Roboto Regular" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="82.0" text="Matrícula" textFill="#686868" />
+      <TextField fx:id="tfMatricula" layoutX="54.0" layoutY="110.0" prefHeight="27.0" prefWidth="182.0" promptText="s243424324" />
+      <TextField fx:id="tfNombre" layoutX="54.0" layoutY="241.0" prefHeight="27.0" prefWidth="182.0" promptText="Juanito" />
+      <Label layoutX="54.0" layoutY="213.0" text="Nombre" textFill="#686868" />
+      <Label layoutX="327.0" layoutY="214.0" text="Apellido Paterno" textFill="#686868" />
+      <TextField fx:id="tfApellidoPaterno" layoutX="327.0" layoutY="242.0" prefHeight="27.0" prefWidth="182.0" promptText="Perez" />
+      <Label layoutX="327.0" layoutY="317.0" text="Facultad" textFill="#686868" />
+      <Label layoutX="581.0" layoutY="319.0" text="Carrera" textFill="#686868" />
+      <TextField fx:id="tfApellidoMaterno" layoutX="581.0" layoutY="242.0" prefHeight="27.0" prefWidth="182.0" promptText="Sanchez" />
+      <Label layoutX="581.0" layoutY="214.0" text="Apellido Materno" textFill="#686868" />
+      <TextField fx:id="tfCorreo" layoutX="54.0" layoutY="448.0" prefHeight="27.0" prefWidth="182.0" promptText="tucorreo@uv.mx" />
+      <Label layoutX="54.0" layoutY="420.0" text="Correo electronico" textFill="#686868" />
+      <ComboBox fx:id="cbFacultad" layoutX="327.0" layoutY="346.0" prefHeight="27.0" prefWidth="182.0" />
+      <ComboBox fx:id="cbCarrera" layoutX="581.0" layoutY="347.0" prefHeight="27.0" prefWidth="182.0" />
+      <Label layoutX="54.0" layoutY="320.0" text="Fecha de Nacimiento" textFill="#686868" />
+      <Button layoutX="400.0" layoutY="110.0" mnemonicParsing="false" onAction="#clicBtnSeleccionarFoto" text="Seleccionar Foto" />
+      <ImageView fx:id="ivFotoAlumno" fitHeight="111.0" fitWidth="140.0" layoutX="581.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="662.0" layoutY="534.0" mnemonicParsing="false" onAction="#clicBtnGuardar" prefHeight="27.0" prefWidth="101.0" text="Guardar" />
+      <Button layoutX="539.0" layoutY="534.0" mnemonicParsing="false" onAction="#clicBtnCancelar" prefHeight="27.0" prefWidth="101.0" text="Cancelar" />
+      <DatePicker fx:id="dpFechaNacimiento" layoutX="54.0" layoutY="347.0" prefHeight="27.0" prefWidth="182.0" />
+   </children>
+</AnchorPane>
