@@ -19,5 +19,9 @@ Hacemos el primer commit
 ```
 subimos al repositorio
 ```ssh
-	git push origin master
+	git push origin
+```
+Obtener cambios de un repositorio global a tu repositorio local
+```ssh
+	git pull
 ```
